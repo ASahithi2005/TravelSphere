@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelSphere</title>
+    <link rel="icon" href="./files/newlogo.png">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+
+<body>
+
+    <!-- Background Video & Header -->
+
+    <div class="banner">
+        <video src="./files/bgvid.mp4" type="video/mp4" autoplay muted loop></video>
+
+        <!-- Header -->
+
+        <div class="content" id="home">
+            <nav>
+                <img src="./files/newlogo.png" class="logo" alt="Logo" title="TravelSphere">
+
+                <ul class="navbar">
+                    <li>
+                        <a href="#home">Home</a>
+                        <a href="#locations">Locations</a>
+                        <a href="#package">Packages</a>
+                        <a href="./about.html">About Us</a>
+                        <a href="./contact.php">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="title">
+                <h1>TravelSphere</h1>
+                <p>Plan your trip with us and travel around the world with the most affordable packages!</p>
+                <a href="./register1.php" class="button">Register Now!</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+
+    <section class="container">
+        <div class="text">
+            <h2>We have the best services available for you!</h2>
+        </div>
+        <div class="rowitems">
+            <div class="container-box">
+                <div class="container-image">
+                    <img src="./files/1a.jpg" alt="Flight Services">
+                </div>
+                <h4>Flight Services</h4>
+                <p>Arrival and Departure</p>
+            </div>
+
+            <div class="container-box">
+                <div class="container-image">
+                    <img src="./files/2a.jpg" alt="Food Services">
+                </div>
+                <h4>Food Services</h4>
+                <p>Catering</p>
+            </div>
+
+            <div class="container-box">
+                <div class="container-image">
+                    <img src="./files/3a.jpg" alt="Travel Services">
+                </div>
+                <h4>Travel Services</h4>
+                <p>Pick-up/drop</p>
+            </div>
+
+            <div class="container-box">
+                <div class="container-image">
+                    <img src="./files/4a.jpg" alt="Hotel Services">
+                </div>
+                <h4>Hotel Services</h4>
+                <p>Check-in/out</p>
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Explore Indian States</title>
+        <style>
+            /* General Styling */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+
+            section.locations {
+                text-align: center;
+                padding: 50px 20px;
+                background-color: #f8f8f8;
+            }
+
+            .package-title {
+                margin-bottom: 30px;
+            }
+
+            .package-title h2 {
+                font-size: 2.5rem;
+                font-weight: 600;
+                color: #333;
+            }
+
+            /* Card Container Styling */
+            .card-container {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px;
+                margin-top: 30px;
+            }
+
+            /* 3D Flip Card Styling */
+            .card-3d {
+                perspective: 1000px;
+                width: 300px;
+                height: 400px;
+            }
+
+            .card-3d-inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transform-style: preserve-3d;
+                transition: transform 0.8s ease;
+            }
+
+            .card-3d:hover .card-3d-inner {
+                transform: rotateY(180deg);
+            }
+
+            .card-3d-front,
+            .card-3d-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            .card-3d-front img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .card-3d-back {
+                background: rgba(0, 0, 0, 0.85);
+                transform: rotateY(180deg);
+                color: white;
+                padding: 20px;
+            }
+
+            .card-3d-back h5 {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+
+            .card-3d-back p {
+                font-size: 1rem;
+                line-height: 1.5;
+                text-align: center;
+            }
+
+            /* Button Styling */
+            .explore-button {
+                display: inline-block;
+                margin-top: 20px;
+                padding: 10px 20px;
+                background: #ff5722;
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: bold;
+                border-radius: 5px;
+                transition: background 0.3s;
+            }
+
+            .explore-button:hover {
+                background: #e64a19;
+            }
+
+            /* Ensure Cards Don't Overlap */
+            .card-container>div {
+                flex: 0 1 calc(25% - 20px);
+                /* Each card takes up 25% of the row minus gap */
+                box-sizing: border-box;
+            }
+
+            @media screen and (max-width: 768px) {
+                .card-container>div {
+                    flex: 0 1 calc(50% - 20px);
+                    /* Two cards per row on smaller screens */
+                }
+            }
+
+            @media screen and (max-width: 480px) {
+                .card-container>div {
+                    flex: 0 1 100%;
+                    /* One card per row on very small screens */
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Locations Section -->
+        <section class="locations" id="locations">
+            <div class="package-title">
+                <h2>Explore Indian States</h2>
+            </div>
+
+            <div class="card-container">
+                <!-- Kerala Card -->
+                <div class="card-3d">
+                    <div class="card-3d-inner">
+                        <div class="card-3d-front">
+                            <img src="./files/kerala.jpg" alt="Kerala">
+                        </div>
+                        <div class="card-3d-back">
+                            <h5>Kerala</h5>
+                            <p>Experience the tranquil backwaters and lush greenery.</p>
+                            <a href="./kerala.html" class="explore-button">Explore Kerala</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Karnataka Card -->
+                <div class="card-3d">
+                    <div class="card-3d-inner">
+                        <div class="card-3d-front">
+                            <img src="./files/karnataka.jpg" alt="Karnataka">
+                        </div>
+                        <div class="card-3d-back">
+                            <h5>Karnataka</h5>
+                            <p>Visit the historic temples and beautiful landscapes in Karnataka.</p>
+                            <a href="./karnataka.html" class="explore-button">Explore Karnataka</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Uttar Pradesh Card -->
+                <div class="card-3d">
+                    <div class="card-3d-inner">
+                        <div class="card-3d-front">
+                            <img src="./files/uttarpradesh.jpg" alt="Uttar Pradesh">
+                        </div>
+                        <div class="card-3d-back">
+                            <h5>Uttar Pradesh</h5>
+                            <p>Explore the cultural heritage and historic sites of UP.</p>
+                            <a href="./uttarpradesh.html" class="explore-button">Explore UP</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- West Bengal Card -->
+                <div class="card-3d">
+                    <div class="card-3d-inner">
+                        <div class="card-3d-front">
+                            <img src="./files/westbengal.jpg" alt="West Bengal">
+                        </div>
+                        <div class="card-3d-back">
+                            <h5>West Bengal</h5>
+                            <p>Delve into the rich culture and heritage of Bengal.</p>
+                            <a href="./westbengal.html" class="explore-button">Explore Bengal</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rajasthan Card -->
+                <div class="card-3d">
+                    <div class="card-3d-inner">
+                        <div class="card-3d-front">
+                            <img src="./files/Rajasthan.png" alt="Rajasthan">
+                        </div>
+                        <div class="card-3d-back">
+                            <h5>Rajasthan</h5>
+                            <p>Discover the majestic forts and royal palaces of Rajasthan.</p>
+                            <a href="./rajasthan.html" class="explore-button">Explore Rajasthan</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maharashtra Card -->
+                <div class="card-3d">
+                    <div class="card-3d-inner">
+                        <div class="card-3d-front">
+                            <img src="./files/Maharashtra.png" alt="Maharashtra">
+                        </div>
+                        <div class="card-3d-back">
+                            <h5>Maharashtra</h5>
+                            <p>Experience the vibrant culture and history of Maharashtra.</p>
+                            <a href="./maharastra.html" class="explore-button">Explore Maharashtra</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Punjab Card -->
+                <div class="card-3d">
+                    <div class="card-3d-inner">
+                        <div class="card-3d-front">
+                            <img src="./files/punjab.png" alt="Punjab">
+                        </div>
+                        <div class="card-3d-back">
+                            <h5>Punjab</h5>
+                            <p>Immerse yourself in the food, culture, and landscapes of Punjab.</p>
+                            <a href="./punjab.html" class="explore-button">Explore Punjab</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Telangana Card -->
+                <div class="card-3d">
+                    <div class="card-3d-inner">
+                        <div class="card-3d-front">
+                            <img src="./files/telangana.png" alt="Telangana">
+                        </div>
+                        <div class="card-3d-back">
+                            <h5>Telangana</h5>
+                            <p>Explore the beautiful landscapes and vibrant culture of Telangana.</p>
+                            <a href="./Telangana.html" class="explore-button">Explore Telangana</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </body>
+
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Packages -->
+
+    <section class="package" id="package">
+        <div class="package-title">
+            <h2>Packages</h2>
+        </div>
+
+        <div class="package-content">
+
+            <div class="box">
+                <div class="image">
+                    <img src="./files/p1.jpg" alt="">
+                    <h3>Rs.9,999/-</h3>
+                </div>
+
+                <div class="dest-content">
+                    <div class="location">
+                        <h4>Bronze</h4>
+                        <ul class="pac-details">
+                            <li>2 Star Hotel</li>
+                            <li>5 Nights Stay</li>
+                            <li>Free photo Session</li>
+                            <li>Friendly Tour Guide</li>
+                            <li>24/7 Customer Help Center</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="./files/p2.jpg" alt="">
+                    <h3>Rs.19,999/-</h3>
+                </div>
+
+                <div class="dest-content">
+                    <div class="location">
+                        <h4>Silver</h4>
+                        <ul class="pac-details">
+                            <li>3 Star Hotel</li>
+                            <li>7 Nights Stay</li>
+                            <li>Free photo Session</li>
+                            <li>Friendly Tour Guide</li>
+                            <li>24/7 Customer Help Center</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="./files/p3.jpg" alt="">
+                    <h3>Rs.29,999/-</h3>
+                </div>
+
+                <div class="dest-content">
+                    <div class="location">
+                        <h4>Gold</h4>
+                        <ul class="pac-details">
+                            <li>4 Star Hotel</li>
+                            <li>10 Nights Stay</li>
+                            <li>Breakfast and Dinner</li>
+                            <li>Free photo Session</li>
+                            <li>Friendly Tour Guide</li>
+                            <li>24/7 Customer Help Center</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="./files/p4.jpg" alt="">
+                    <h3>Rs.39,999/-</h3>
+                </div>
+
+                <div class="dest-content">
+                    <div class="location">
+                        <h4>Platinum</h4>
+                        <ul class="pac-details">
+                            <li>5 Star Hotel</li>
+                            <li>14 Nights Stay</li>
+                            <li>Breakfast, Lunch and Dinner</li>
+                            <li>Bornfire</li>
+                            <li>Free photo Session</li>
+                            <li>Friendly Tour Guide</li>
+                            <li>24/7 Customer Help Center</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Newsletter -->
+
+    <section class="newsletter">
+        <div class="newstext">
+            <h2>Newsletter</h2>
+            <p>Subscribe to get offers and latest<br>updates every week!</p>
+        </div>
+
+        <div class="send">
+            <form action="">
+                <input type="email" name="emailid" placeholder="E-mail" required>
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <div class="foot">
+            <div class="footer-content">
+
+                <div class="footlinks">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./register.html">Register</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footlinks">
+                    <h4>Connect</h4>
+                    <div class="social">
+                        <a href="" target="_blank"><i
+                                class='bx bxl-facebook'></i></a>
+                        <a href="" target="_blank"><i
+                                class='bx bxl-instagram'></i></a>
+                        <a href="" target="_blank"><i
+                                class='bx bxl-twitter'></i></a>
+                        <a href="" target="_blank"><i
+                                class='bx bxl-linkedin'></i></a>
+                        <a href="" target="_blank"><i class='bx bxl-youtube'></i></a>
+                        <a href="" target="_blank"><i
+                                class='bx bxl-wordpress'></i></a>
+                        <a href="" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="end">
+            <p>Copyright © 2024 TravelSphere All Rights Reserved.<br>Website developed by: Sahithi & Sagarika </p>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
