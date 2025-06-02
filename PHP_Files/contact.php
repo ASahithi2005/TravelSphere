@@ -22,7 +22,7 @@
                 <a href="./index.html#locations">Locations</a>
                 <a href="./index.html#package">Packages</a>
                 <a href="./about.html">About Us</a>
-                <a href="./contact.php">Contact Us</a>
+                <a href="../PHP_Files/contact.php">Contact Us</a>
             </li>
         </ul>
     </nav>
@@ -103,9 +103,9 @@
                 <div class="footlinks">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="./register.html">Register</a></li>
+                        <li><a href="../PHP_Files/register1.php">Register</a></li>
                         <li><a href="./about.html">About Us</a></li>
-                        <li><a href="./contact.html">Contact Us</a></li>
+                        <li><a href="../PHP_Files/contact.php">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="footlinks">

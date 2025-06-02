@@ -84,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <a href="./index.html#locations">Locations</a>
                 <a href="./index.html#package">Packages</a>
                 <a href="./about.html">About Us</a>
-                <a href="./contact.html">Contact Us</a>
+                <a href="../PHP_Files/contact.php">Contact Us</a>
             </li>
         </ul>
     </nav>
