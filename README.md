@@ -42,6 +42,16 @@ TravelSphere is designed to provide categorized tourist information across 8 Ind
 
 ---
 
+## 🎥 Output Screenshots
+
+<img src="output1.jpg" alt="Screenshot 1" width="400"/>
+<img src="output2.jpg" alt="Screenshot 2" width="400"/>
+<img src="ouput3.jpg" alt="Screenshot 3" width="400"/>
+
+
+
+
+
 ## ✅ Conclusion
 TravelSphere is a complete, responsive tourism website integrating both frontend and backend functionalities. It simplifies trip planning with categorized destinations and user-friendly features. With future enhancements, it can become a robust platform for travelers.
 
