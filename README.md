@@ -15,7 +15,6 @@ TravelSphere is designed to provide categorized tourist information across 8 Ind
 - Display categorized tourist destinations (Historical, Nature, Adventure)  
 - Enable user registration and data storage  
 - Provide travel package details (Bronze, Silver, Gold, Platinum)  
-- Ensure responsive design with form validations  
 - Facilitate user queries through a contact form  
 
 ---
@@ -43,13 +42,15 @@ TravelSphere is designed to provide categorized tourist information across 8 Ind
 
 ---
 
-## 🧱 Database Schema
+## ✅ Conclusion
+TravelSphere is a complete, responsive tourism website integrating both frontend and backend functionalities. It simplifies trip planning with categorized destinations and user-friendly features. With future enhancements, it can become a robust platform for travelers.
 
-```sql
-CREATE TABLE registrations (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100),
-    email VARCHAR(100),
-    state VARCHAR(50),
-    category VARCHAR(50)
-);
+---
+
+## 👥 Authors
+Adla Sahithi
+
+Sagarika Jandhyala
+
+
+
